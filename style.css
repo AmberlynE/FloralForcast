@@ -1,0 +1,116 @@
+#profile {
+  margin-right: 20px;
+  margin-top: 12px;
+  border: none;
+  height: 30px;
+  background: transparent;
+}
+
+#navbar {
+  background-color: rgb(138, 201, 169);
+}
+
+#navbargroup {
+  font-size: 17px;
+  font-style: italic;
+}
+
+#floral {
+  background-image: url(floral.jpg);
+  min-height: 800px;
+  background-size: cover;
+  font-size: 75px;
+  font-style: italic;
+}
+
+#home {
+  color: white;
+  padding-top: 50px;
+}
+
+#date {
+  font-size: 12px;
+  padding-top: 180px;
+}
+
+#form {
+  margin-top: 180px;
+}
+
+#choose {
+  font-size: 30px;
+}
+
+#garden {
+  color: white;
+}
+
+.table {
+  font-size: 20px;
+  background-color: peachpuff;
+}
+
+#link1 {
+  font-size: 5em;
+  color: white;
+  width: 8em;
+  height: 2em;
+  line-height: 2;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+.link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+hr {
+  color: black;
+  margin-left: 20px;
+}
+
+#location {
+  font-size: 20px;
+  padding-top: 20px;
+  margin-left: 22%;
+  margin-right: 20%;
+}
+
+#local {
+  margin-top: 20px;
+}
+
+#farmers {
+  color: white;
+  font-size: 50px;
+  padding-top: 20px;
+}
+
+#market {
+  background-image: url(market2.jpg);
+  min-height: 800px;
+  background-size: cover;
+  font-size: 75px;
+  font-style: italic;
+}
+
+#insp {
+  background-color: black;
+  min-height: 800px;
+  background-size: cover;
+  color: white;
+  font-size: 70px;
+}
+
+img {
+  height: 550px;
+  width: 400px;
+  padding-left: 20px;
+}

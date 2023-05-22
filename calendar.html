@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&family=Nunito+Sans&family=Righteous&family=Roboto&family=Roboto+Condensed&family=Rubik&family=Rubik+Microbe&family=Rubik+Pixels&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>Growing Calendar</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="navbar" class="row text-center container-fluid">
+        <div id="navbar" class="col-9">
+          <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li id="navbargroup" class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li id="navbargroup" class="nav-item">
+                    <a class="nav-link" href="calendar.html"
+                      >Create Growing Calendar</a
+                    >
+                  </li>
+                  <li id="navbargroup" class="nav-item">
+                    <a class="nav-link" href="markets.html"
+                      >Local Farmers Markets</a
+                    >
+                  </li>
+                  <li id="navbargroup" class="nav-item">
+                    <a class="nav-link" href="inspiration.html"
+                      >Garden Inspiration</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!--end of nav col-9-->
+        <div class="col-3 text-end">
+          <button id="profile">
+            <span class="material-symbols-sharp" href="#">
+              account_circle
+            </span>
+          </button>
+        </div>
+        <!--end of navbar col-3-->
+      </div>
+      <!--end of navbar row-->
+      <div id="floral" class="row">
+        <div class="row">
+          <div class="col-2">
+            <div id="date" class="form-floating mb-3">
+              <input
+                type="date"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label id="form" for="floatingInput">Last frost date..</label>
+            </div>
+            <!--end of date col-->
+            <select
+              id="select"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected>Season</option>
+              <option value="1">Fall</option>
+              <option value="2">Spring</option>
+              <option value="2">Summer</option>
+            </select>
+            <select
+              id="select"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected>Sun/Shade</option>
+              <option value="1">Sun</option>
+              <option value="2">Shade</option>
+            </select>
+            <select
+              id="select"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected>Color</option>
+              <option value="1">Red</option>
+              <option value="2">Orange</option>
+              <option value="2">Yellow</option>
+              <option value="2">Green</option>
+              <option value="2">Blue</option>
+              <option value="2">Purple</option>
+            </select>
+            <select
+              id="select"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected>Height</option>
+              <option value="1">less than 12 inches</option>
+              <option value="2">12 to 20 inches</option>
+              <option value="2">20 to 30 inches</option>
+              <option value="2">greater than 30 inches</option>
+            </select>
+          </div>
+          <!--end col 2 select-->
+          <div id="garden" class="col-10 text-center">
+            <span>Create Growing Calendar</span><br />
+            <span id="choose">Choose your garden below:</span>
+            <div class="table">
+              <table class="table table-striped table-hover table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">☑️</th>
+                    <th scope="col">Flower</th>
+                    <th scope="col">Season</th>
+                    <th scope="col">Sun/Shade</th>
+                    <th scope="col">Height</th>
+                    <th scope="col">color</th>
+                    <th scope="col">Indoor start date</th>
+                    <th scope="col">Transfer date</th>
+                    <th scope="col">Harvest</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th scope="row">1</th>
+                    <th scope="col"><input type="checkbox" /></th>
+                    <td>Daisy</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <th scope="col"><input type="checkbox" /></th>
+                    <td>Rudbeckia</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <th scope="col"><input type="checkbox" /></th>
+                    <td>Sunflower</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--end table-->
+            <div class="submit text-end">
+              <input
+                id="submit"
+                class="btn btn-primary"
+                type="submit"
+                value="Submit"
+              />
+            </div>
+          </div>
+          <!--end of garden col 10-->
+        </div>
+      </div>
+      <!--end floral row-->
+    </div>
+    <!--end of container-->
+  </body>
+</html>
